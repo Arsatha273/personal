@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>Read the Letter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #d6336c;
+      font-size: 28px;
+    }
+
+    h2::before {
+      content: "";
+    }
+
+    h3 {
+      color: #444;
+      margin-top: 40px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #d6336c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #b82e5d;
+    }
+  </style>
+</head>
+<body>
+  <h2>❤️ Dear Future Partner</h2>
+  <p>[Letter content here...]</p>
+
+  <h3>Leave your Feedback</h3>
+  <form action="submit.php" method="POST">
+    <textarea name="message" rows="10" cols="50" placeholder="Your feedback here..." required></textarea><br>
+    <input type="submit" value="Send Feedback">
+  </form>
+</body>
+</html>
